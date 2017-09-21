@@ -1892,7 +1892,7 @@ footer {
     margin-right: 1rem;
     margin-left: 1rem; } }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   .ml-container {
     margin-right: 1rem;
     margin-left: 1rem; } }

@@ -33,7 +33,7 @@ footer {
       margin-left: $ml-padding-1;
     }
   }
-  @include tablet {
+  @include tablet-only {
     &-container {
       margin-right: $ml-padding-1;
       margin-left: $ml-padding-1;
