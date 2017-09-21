@@ -1,0 +1,14 @@
+@import 'bulma/sass/elements/icon.sass';
+
+.ml {
+  &-icon-padd {
+    padding-top: 6px;
+  }
+  &-icon-shipping {
+    background: url(../../assets/ic_shipping@2x.png) no-repeat center center;
+    background-size: contain;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+@import 'bulma/sass/utilities/_all.sass';
+@import '../../sass/variables.scss';
+@import 'bulma/sass/components/media.sass';
+
+$ml-picture-size: 180px;
+.ml {
+  &-is-180x180 {
+    height: $ml-picture-size;
+    width: $ml-picture-size;
+  }
+  &-items {
+    &__item {
+      &__text {
+        font-size: $ml-font-size-3;
+      }
+      &__price {
+        font-size: $ml-font-size-4;
+        margin-right: 5px;
+      }
+      &__image {
+        border-radius: $ml-border-radius;
+        img {
+          border-radius: $ml-border-radius;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      & + & {
+        margin-top: 0;
+      }
+    }
+  }
+}

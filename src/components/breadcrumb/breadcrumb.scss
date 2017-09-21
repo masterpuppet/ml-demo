@@ -1,0 +1,29 @@
+@import 'bulma/sass/utilities/_all.sass';
+@import '../../sass/variables.scss';
+
+@import 'bulma/sass/components/breadcrumb.sass';
+
+.ml {
+  &-breadcrumb {
+    margin-bottom: $ml-padding-1;
+    margin-top: $ml-padding-1;
+    li:first-child a {
+      padding-left: 0;
+    }
+    a {
+      font-size: $ml-font-size-2;
+    }
+    li + li::before {
+      content: ">";
+    }
+  }
+  @include mobile {
+    &-breadcrumb {
+      display: block;
+      ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+}

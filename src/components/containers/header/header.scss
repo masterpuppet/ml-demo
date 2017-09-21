@@ -1,0 +1,64 @@
+@import 'bulma/sass/utilities/_all.sass';
+@import '../../../sass/variables.scss';
+@import 'bulma/sass/components/nav.sass';
+@import 'bulma/sass/components/navbar.sass';
+@import 'bulma/sass/elements/form.sass';
+
+@mixin header () {
+  &-navbar {
+    .navbar-brand {
+      float: left;
+    }
+    .navbar-item {
+      padding-right: $ml-padding-1;
+    }
+  }
+}
+
+.ml {
+  &-is-light {
+    background-color: $ml-color-grey-light !important;
+  }
+  &--level {
+    background-color: $ml-color-yellow;
+  }
+  &-is-fullwidth {
+    width: 100%;
+  }
+  &-navbar {
+    background-color: $ml-color-yellow;
+    a.navbar-item:hover {
+      background-color: $ml-color-yellow;
+    }
+    &-input:focus {
+      border: 1px solid #dbdbdb;
+      box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+    }
+    &-item {
+      flex-grow: 1;
+      padding-right: 3px;
+    }
+    &__logo {
+      background: url('../../../assets/Logo_ML@2x.png') no-repeat center center;
+      background-size: contain;
+      display: block;
+      height: 36px;
+      width: 53px;
+    }
+  }
+
+  &-icon-search {
+    background: $ml-color-grey-light url(../../../assets/ic_Search@2x.png) no-repeat center center;
+    background-size: contain;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  @include mobile {
+    @include header;
+  }
+  @include tablet {
+    @include header;
+  }
+}

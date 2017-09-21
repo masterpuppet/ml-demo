@@ -1,0 +1,25 @@
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem; }
+  .icon.is-small {
+    height: 1rem;
+    width: 1rem; }
+  .icon.is-medium {
+    height: 2rem;
+    width: 2rem; }
+  .icon.is-large {
+    height: 3rem;
+    width: 3rem; }
+
+.ml-icon-padd {
+  padding-top: 6px; }
+
+.ml-icon-shipping {
+  background: url(../../assets/ic_shipping@2x.png) no-repeat center center;
+  background-size: contain;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%; }
