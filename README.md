@@ -7,6 +7,7 @@ Requirements: Node v7.8.0
 - `yarn`
 - `yarn serve`
 
+to view the demo navigate to `http://localhost:3001`
 to exec the app as development environment run `yarn start`
 to exec the app as production run `yarn serve`
 
