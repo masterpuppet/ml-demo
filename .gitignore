@@ -22,4 +22,4 @@ yarn-error.log*
 
 .tmp
 
-.css
+/src/**/*.css

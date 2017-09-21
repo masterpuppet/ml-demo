@@ -7,7 +7,6 @@ import { IntlProvider } from 'react-intl';
 import { renderRoutes } from 'react-router-config';
 import registerServiceWorker from './registerServiceWorker';
 
-import './index.css';
 import routes from './routes';
 import configureStore from './configureStore';
 import i18n from './i18n';
